@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="stiliai.css">
+        <title>Smart House</title>
+        
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="col-3" id="header">
+                    <div class="card" >
+                        <h1 id="Name"><img src="Logo.png" alt="Logo" id="Logo_main"> Smart house control panel</h1>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="card">
+                   <p id="map_p">
+                    <img src="flore_plan.png" usemap="#workmap" id="map">
+                    <map name="workmap">
+                        <area shape="rect" coords="90,40,183,161" alt="Kambarys Nr. 1" href="javascript:showMenu('menu1');" >
+                        <area shape="rect" coords="90,167,183,318" alt="Kambarys Nr. 2" href="javascript:showMenu('menu2');" >
+                        <area shape="rect" coords="189,40,282,85" alt="Virtuve" href="javascript:showMenu('menu3');" >
+                        <area shape="rect" coords="227,91,282,134" alt="Vonia + Wc" href="javascript:showMenu('menu4');" >
+                    </map>
+                        <div class="card" id="menu1">
+                            <h1>Kambarys 1.</h1>
+                            <h2>
+                                Lempa
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </h2>
+                        </div>
+                        <div class="card" id="menu2">
+                                Kambarys 2.
+                            
+                        </div>
+                            <div class="card" id="menu3">
+                                Virtuve
+                            
+                        </div>
+                            <div class="card" id="menu4">
+                               Vonia + Wc
+                            
+                        </div> 
+                    </p> 
+                </div>
+            </div>
+        </main>
+
+        <script src="js/bootstrap.min.js" ></script>
+        <script src="js.js" ></script>
+    </body>
+
+</html>
