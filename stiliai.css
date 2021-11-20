@@ -1,30 +1,33 @@
 #Logo_main {
-    width: 100px;
+  width: 100px;
 }
+
 #Name {
-    text-align: center;
-    color: rgb(223, 223, 223);
-  
-    font-weight: bold;
-    font-size: 10px;
+  text-align: center;
+  color: #dfdfdf;
+  font-weight: bold;
+  font-size: 10px;
 }
+
 body {
-    background-color: rgb(4,9,49);
-    /*background-image: url(bg.jpg);*/
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin-top: 100px;  
-    font-family: 'Comfortaa', cursive;
+  background-color: #040931;
+  /*background-image: url(bg.jpg);*/
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  font-family: 'Comfortaa', cursive;
 }
+
 #header {
-    background-color: rgb(0, 0, 75);
-    margin: 2px;
-    
-    
+  background-color: #00004b;
+  margin: 2px;
 }
+
 .card {
   /*background-color: rgb(4, 9, 49);*/
   background-color: black;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   border-color: white;
   border-width: 5px;
@@ -33,64 +36,77 @@ body {
   border-radius: 50px;
 }
 
-
 .icons {
-    width: 130px;
-    margin:30px;
-    border-width: 5px;
-    border-radius: 10%;
-    border-color: white;
-    filter: invert(100%);
+  width: 130px;
+  margin: 30px;
+  border-width: 5px;
+  border-radius: 10%;
+  border-color: white;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
+
 p {
   text-align: center;
 }
+
 h6 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   font-size: 20px;
-  
   color: red;
 }
+
 a {
   text-decoration: none;
-  margin-left:25px;
-  margin-right:25px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
-.card_element{
+
+.card_element {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
-  padding:10px;
+  padding: 10px;
   margin: 10px;
   float: left;
   border-radius: 50px;
-  font-size:20px;
+  font-size: 20px;
 }
-.card-header{
-  border-bottom-color:white;
+
+.card-header {
+  border-bottom-color: white;
   border-bottom-width: 5px;
 }
-#button_back{
+
+#button_back {
   font-weight: bolder;
   font-size: 20px;
   text-align: center;
 }
+
 /* pop up's */
 #content {
-    position: relative}
-    
+  position: relative;
+}
+
 #content a {
-    display: block}
-    
-#menu10{
+  display: block;
+}
+
+#menu10 {
   display: block;
   position: relative;
 }
+
 #menu1, #menu2, #menu3, #menu4, #menu5, #menu6, #menu7, #menu8, #menu9 {
-    background-color: black;
-    color: white;
-    display: none;
-    position: relative;
-    width: 100%;
-  }
+  background-color: black;
+  color: white;
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
 /* end of pop up's */
+/*# sourceMappingURL=stiliai.css.map */

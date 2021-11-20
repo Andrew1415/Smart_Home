@@ -25,19 +25,39 @@ function hideMenu(menuId){
     document.getElementById('menu9').style.display="none";
     document.getElementById('menu10').style.display="block";
 }
+/*
+var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+var toastTrigger_front_door_lock = document.getElementById('front_lock')
+var toastTrigger_front_door_unlock = document.getElementById('front_unlock')
+var toastLive_front_door_lock = document.getElementById('liveToast1')
+var toastLive_front_door_unlock = document.getElementById('liveToast2')
+if (toastTrigger_front_door_lock) {
+  toastTrigger_front_door_lock.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLive_front_door_lock)
 
-function saveEdits() {
+    toast.show()
+  })
+}
+if (toastTrigger_front_door_unlock) {
+  toastTrigger_front_door_unlock.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLive_front_door_unlock)
 
-    //get the editable element
-    var editElem = document.getElementById("edit");
-    
-    //get the edited element content
-    var userVersion = editElem.innerHTML;
-    
-    //save the content to local storage
-    localStorage.userEdits = userVersion;
-    
-    //write a confirmation to the user
-    document.getElementById("update").innerHTML="Edits saved!";
-    
-    }
+    toast.show()
+  })
+}
+*/
+
+var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+function alert(message, type) {
+  var wrapper = document.createElement('div')
+  wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+  alertPlaceholder.append(wrapper)
+}
+
+var alertTrigger = document.getElementById('front_lock')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', function () {
+    alert('Nice, you triggered this alert message!', 'success')
+  })
+}

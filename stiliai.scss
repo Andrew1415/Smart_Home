@@ -1,110 +1,111 @@
 #Logo_main {
-  width: 3em;
+  width: 100px;
 }
+//corona
 #Name {
   text-align: center;
-  color: rgb(223, 223, 223);
-  font-family: 'Courier New', Courier, monospace;
+  color: #dfdfdf;
   font-weight: bold;
   font-size: 10px;
 }
+
 body {
-  background-image: url(bg.jpg);
+  background-color: #040931;
+  /*background-image: url(bg.jpg);*/
   background-size: 100%;
   background-repeat: no-repeat;
   margin-top: 100px;
+  font-family: 'Comfortaa', cursive;
 }
+
 #header {
-  background-color: rgb(0, 0, 75);
+  background-color: #00004b;
   margin: 2px;
-  
-  
 }
+
 .card {
-background-color: rgb(0, 0, 75);
-height: fit-content;
-border-color: white;
-border-width: 5px;
-margin-right: 5px;
-margin-left: 5px;
+  /*background-color: rgb(4, 9, 49);*/
+  background-color: black;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-color: white;
+  border-width: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 50px;
 }
-#map {
-  width: fit-content;
-  transform: rotate(270deg)
-}
-#map_p {
-  text-align: center;
-}
+
 .icons {
-  width: 100px;
-  margin:30px;
+  width: 130px;
+  margin: 30px;
   border-width: 5px;
   border-radius: 10%;
   border-color: white;
-  filter: invert(100%);
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
-.container{
-background-color: rgb(0, 0, 75);
-border-radius: 10%;
-}
+
 p {
-text-align: center;
+  text-align: center;
 }
+
 h6 {
-font-family: Arial, Helvetica, sans-serif;
-font-weight: bolder;
-font-size: 20px;
-
-color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: red;
 }
+
 a {
-text-decoration: none;
+  text-decoration: none;
+  margin-left: 25px;
+  margin-right: 25px;
 }
-/* below not touch  corona*/
+
+.card_element {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.card-header {
+  border-bottom-color: white;
+  border-bottom-width: 5px;
+}
+
+#button_back {
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* pop up's */
 #content {
-  position: relative}
-  
+  position: relative;
+}
+
 #content a {
-  display: block}
-  
+  display: block;
+}
+
+#menu10 {
+  display: block;
+  position: relative;
+}
+
 #menu1, #menu2, #menu3, #menu4, #menu5, #menu6, #menu7, #menu8, #menu9 {
-  background-color: white;
-  display: none}
-  
-#menu1 {
-position: relative;
+  background-color: black;
+  color: white;
+  display: none;
+  position: relative;
+  width: 100%;
 }
-  
-#menu2 {
-position: relative;
-}
-  
-#menu3 {
-position: relative;
-/* top: 40px; left: 40px;*/
-}
-  
-#menu4 {
-position: relative;
-}
-
-#menu5 {
-position: relative;
-}
-
-#menu6 {
-position: relative;
-}
-
-#menu7 {
-position: relative;
-}
-
-#menu8 {
-position: relative;
-}
-
-#menu9 {
-position: relative;
-}
-/* end of pop up menu */
+/* end of pop up's */
+/*# sourceMappingURL=stiliai.css.map */

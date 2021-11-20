@@ -9,9 +9,18 @@
     </head>
     <body>
         <main>
-            <div class="container">
+            <div class="container-fluid">
             <div class="row">
+                <div class="col-2">
+                    <div id="liveAlertPlaceholder"></div>
+                </div>
+                <div class="col-8">
+
+
+                
                     <div class="row">
+                        
+                        
                         <div class="card" id="menu10">
                             <div class="row">
                                 <div class="col">
@@ -52,14 +61,13 @@
                                         </div>
                                         <div class="card-body">
                                             <div class="btn-group" role="group" aria-label="Front_Lock">
-                                                <input type="radio" class="btn-check" name="Front_Lock" id="btnradio1" autocomplete="off" checked>
-                                                <label class="btn btn-outline-primary" for="btnradio1">Lock</label>
+                                                <input type="radio" class="btn-check" name="Front_Lock" id="front_lock"  autocomplete="off" checked>
+                                                <label class="btn btn-outline-primary" for="front_lock">Lock</label>
                                         
-                                                <input type="radio" class="btn-check" name="Front_Lock" id="btnradio2" autocomplete="off">
-                                                <label class="btn btn-outline-primary" for="btnradio2">Unlock</label>
+                                                <input type="radio" class="btn-check" name="Front_Lock" id="front_unlock" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="front_unlock">Unlock</label>
                                             </div>
                                         </div>
-                                        
                                         
                                     </div>
                                     <div class="card card_element">
@@ -146,8 +154,10 @@
                         <!-- End of pop ups -->
                         </div>
                         </div>
+                        <div class="col-2"></div>
                     </div>
-                </div>   
+                </div>
+            </div>
         </main>
 
         <script src="js/bootstrap.min.js" ></script>
