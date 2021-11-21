@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:object-paths="false"
+     inkscape:snap-nodes="true"
+     inkscape:snap-grids="true"
+     inkscape:snap-to-guides="false"
+     inkscape:zoom="0.72337262"
+     inkscape:cx="488.68314"
+     inkscape:cy="514.94899"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true" />
+  <defs
+     id="defs2">
+    <rect
+       x="851.56666"
+       y="3219.6408"
+       width="71.885497"
+       height="645.58706"
+       id="rect26049" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:90.0633px;line-height:0;font-family:Magneto;-inkscape-font-specification:'Magneto Bold';baseline-shift:baseline;white-space:pre;inline-size:280.159;fill:#550000;stroke-width:0.264583"
+       x="90.224174"
+       y="136.06404"
+       id="text957"
+       transform="matrix(1,0,0,0.95892871,5.8522256,52.167639)"><tspan
+         x="90.224174"
+         y="136.06404"
+         id="tspan46455"><tspan
+           style="text-align:center;baseline-shift:baseline;text-anchor:middle"
+           id="tspan46453">AS</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text26047"
+       style="line-height:1.25;font-family:'Courier New';font-size:192px;-inkscape-font-specification:'Courier New Bold';font-weight:bold;white-space:pre;shape-inside:url(#rect26049)" />
+  </g>
+</svg>
