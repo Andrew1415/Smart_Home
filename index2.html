@@ -7,24 +7,22 @@
         <title>Smart House</title>
         
     </head>
-    <body>
+    <body> 
+        <p id="menu11"><div class="card"><p><a href="javascript:showMenu('menu10');"><img src="Logo.svg" alt="Lock's" style="height: 500px;"></a></p></div></p>
         <main>
             <div class="container-fluid">
+               
             <div class="row">
                 <div class="col-2">
                     <div id="liveAlertPlaceholder"></div>
                 </div>
                 <div class="col-8">
-
-
-                
+                    
                     <div class="row">
-                        
-                        
+                        <!-- Main menu -->
                         <div class="card" id="menu10">
                             <div class="row">
                                 <div class="col">
-                                
                                 </div>
                                 <div class="col-3">
                                     <p><a href="javascript:showMenu('menu1');"><img src="icons/lock.png" class="icons" alt="Lock's" ></a></p>
@@ -49,11 +47,10 @@
 
                             </div>
                         </div>
-                        <!-- Pop ups -->
-                        <!-- Menu's  -->
+                        <!-- Menues  -->
                         <!-- Menu  1 -->
                         <div class="card" id="menu1">
-                            <h1><a class="btn btn-danger button_back" href="javascript:hideMenu('menu1'); javascript:showMainMenu('main_menu')" role="button">&#129044;</a>Locks</h1>
+                            <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu10');" role="button">&#129044;</a>Locks</h1>
                             
                                     <div class="card card_element">
                                         <div class="card-header">
@@ -102,7 +99,7 @@
                              
                         <!-- Menu  2 -->
                         <div class="card" id="menu2">
-                                <h1><a class="btn btn-danger button_back" href="javascript:hideMenu('menu2');" role="button">&#129044;</a>CCTV</h1>
+                                <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu10');" role="button">&#129044;</a>CCTV</h1>
                                 
                                 <div class="card card_element">
                                     <div class="card-header">
@@ -118,7 +115,7 @@
                         </div>
                         <!-- Menu  3 -->
                         <div class="card" id="menu3">
-                            <H1><a class="btn btn-danger button_back" href="javascript:hideMenu('menu3');" role="button">&#129044;</a>Information and sources</H1>
+                            <H1><a class="btn btn-danger button_back" href="javascript:showMenu('menu10');" role="button">&#129044;</a>Information and sources</H1>
                             <p>Page made by: Andrius Stulgys<img src="Logo.svg" id="Logo_main"></p>
                             <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
                             <div>Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
@@ -126,30 +123,45 @@
                         </div>
                         <!-- Menu  4 -->
                         <div class="card" id="menu4">
-                             <h1><a class="btn btn-danger button_back" href="javascript:hideMenu('menu4');" role="button">&#129044;</a>Climate cotrol</h1>
+                             <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu10');" role="button">&#129044;</a>Climate cotrol</h1>
                                 
                         </div>
                         <!-- Menu  5 -->
                         <div class="card" id="menu5">
-                            <a class="btn btn-danger button_back" href="javascript:hideMenu('menu5');" role="button">&#129044;</a>
+                            <a class="btn btn-danger button_back" href="javascript:showMenu('menu10');" role="button">&#129044;</a>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h1>Floor plane</h1>
+                                </div>
+                                <div class="card-body">
+                                    <img src="flore_plan.png" usemap="#workmap" id="map">
+                                    <map name="workmap">
+                                        <area shape="rect" coords="283,197,132,104" alt="Master Bedroom" href="javascript:florePlan('menu11');" >
+                                        <area shape="rect" coords="5,197,126,104" alt="Home office" href="javascript:florePlan('menu12');" >
+                                        <area shape="rect" coords="5,5,77,98" alt="Kitchen" href="javascript:florePlan('menu13');">
+                                        <area shape="rect" coords="83,60,126,5" alt="Bathroom & toilet" href="javascript:florePlan('menu14');" >
+                                        <area shape="poly" coords="83,98,83,66,132,66,132,5,160,5,160,90" alt="Corridor" href="javascript:florePlan('menu15')">
+                                    </map>
+                                </div>
+                            </div>
                                 
                         </div>
                         <!-- Menu  6 -->
                         <div class="card" id="menu6">
-                            <h1><a class="btn btn-danger button_back" href="javascript:hideMenu('menu6');" role="button">&#129044;</a>Windowns & Blinds </h1>    
+                            <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu10');" role="button">&#129044;</a>Windowns & Blinds </h1>    
                         </div>
                         <!-- Menu  7 -->
                         <div class="card" id="menu7">
-                            <h1><a class="btn btn-danger button_back" href="javascript:hideMenu('menu7');" role="button">&#129044;</a>Showers / sinks / taps </h1>    
+                            <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu10');" role="button">&#129044;</a>Showers / sinks / taps </h1>    
                         </div>
                         <!-- Menu  8 -->
                         <div class="card" id="menu8">
                             
-                            <h1><a class="btn btn-danger button_back" href="javascript:hideMenu('menu8');" role="button">&#129044;</a>Lighting system </h1>    
+                            <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu10');enu8');" role="button">&#129044;</a>Lighting system </h1>    
                         </div>
                         <!-- Menu  9 -->
                         <div class="card" id="menu9">
-                            <h1><a class="btn btn-danger button_back" href="javascript:hideMenu('menu9');" role="button">&#129044;</a> TV's </h1>    
+                            <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu10');" role="button">&#129044;</a> TV's </h1>    
                         </div>
                         <!-- End of pop ups -->
                         </div>

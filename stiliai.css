@@ -80,6 +80,13 @@ a {
   border-bottom-width: 5px;
 }
 
+#map {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 #button_back {
   font-weight: bolder;
   font-size: 20px;
@@ -96,11 +103,20 @@ a {
 }
 
 #menu10 {
-  display: block;
+  display: none;
   position: relative;
 }
 
-#menu1, #menu2, #menu3, #menu4, #menu5, #menu6, #menu7, #menu8, #menu9 {
+#menu11 {
+  display: block;
+  position: relative;
+  background-color: black;
+  color: white;
+  position: relative;
+  width: 500px;
+}
+
+#menu1, #menu2, #menu3, #menu4, #menu5, #menu6, #menu7, #menu8, #menu9, #menu12, #menu13, #menu14, #menu15 {
   background-color: black;
   color: white;
   display: none;
