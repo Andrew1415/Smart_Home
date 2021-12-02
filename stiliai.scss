@@ -10,17 +10,12 @@
 }
 
 body {
-  background-color: #040931;
+  background-color: #361d32;
   /*background-image: url(bg.jpg);*/
   background-size: 100%;
   background-repeat: no-repeat;
   margin-top: 50px;
   font-family: 'Comfortaa', cursive;
-}
-
-#header {
-  background-color: #00004b;
-  margin: 2px;
 }
 
 .card {
@@ -73,6 +68,8 @@ a {
   float: left;
   border-radius: 50px;
   font-size: 20px;
+  background-color:#edd2cb;
+  color:black;
 }
 
 .card-header {
@@ -80,8 +77,8 @@ a {
   border-bottom-width: 5px;
 }
 #map {
-  filter: invert(100%);
-  transform: rotate(0deg);
+  filter: invert(0%);
+
 }
 
 #button_back {
@@ -101,14 +98,20 @@ a {
 
 #menu10 {
   display: block;
+  border-style: double;
+  border-width: 10px;
+  background-color: #543c52;
 }
 
 #menu1, #menu2, #menu3, #menu4, #menu5, #menu6, #menu7, #menu8, #menu9, #menu12, #menu13, #menu14, #menu15, #menu11 {
-  background-color: black;
+  background-color: #543c52;
   color: white;
   display: none;
   position: relative;
   width: 100%;
+  border-style: double;
+  border-width: 10px;
 }
+
 /* end of pop up's */
 /*# sourceMappingURL=stiliai.css.map */
