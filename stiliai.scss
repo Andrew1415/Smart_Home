@@ -14,7 +14,7 @@ body {
   /*background-image: url(bg.jpg);*/
   background-size: 100%;
   background-repeat: no-repeat;
-  margin-top: 100px;
+  margin-top: 50px;
   font-family: 'Comfortaa', cursive;
 }
 
@@ -100,18 +100,10 @@ a {
 }
 
 #menu10 {
-  display: none;
-  position: relative;
-}
-#menu11{
   display: block;
-  position: relative;
-  background-color: black;
-  color: white;
-  position: relative;
-  width: 500px;
 }
-#menu1, #menu2, #menu3, #menu4, #menu5, #menu6, #menu7, #menu8, #menu9, #menu12, #menu13, #menu14, #menu15 {
+
+#menu1, #menu2, #menu3, #menu4, #menu5, #menu6, #menu7, #menu8, #menu9, #menu12, #menu13, #menu14, #menu15, #menu11 {
   background-color: black;
   color: white;
   display: none;
