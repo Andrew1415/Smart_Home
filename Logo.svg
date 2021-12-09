@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
-   sodipodi:docname="drawing.svg"
+   sodipodi:docname="Logo.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -22,21 +22,25 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
-     showgrid="false"
+     showgrid="true"
      inkscape:object-paths="false"
      inkscape:snap-nodes="true"
      inkscape:snap-grids="true"
      inkscape:snap-to-guides="false"
      inkscape:zoom="0.72337262"
-     inkscape:cx="488.68314"
-     inkscape:cy="514.94899"
+     inkscape:cx="1061.0023"
+     inkscape:cy="524.62588"
      inkscape:window-width="1920"
-     inkscape:window-height="1001"
+     inkscape:window-height="991"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
-     showguides="true" />
+     showguides="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid11" />
+  </sodipodi:namedview>
   <defs
      id="defs2">
     <rect
@@ -59,9 +63,9 @@
        transform="matrix(1,0,0,0.95892871,5.8522256,52.167639)"><tspan
          x="90.224174"
          y="136.06404"
-         id="tspan46455"><tspan
+         id="tspan25"><tspan
            style="text-align:center;baseline-shift:baseline;text-anchor:middle"
-           id="tspan46453">AS</tspan></tspan></text>
+           id="tspan23">AS</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"

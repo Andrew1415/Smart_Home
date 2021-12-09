@@ -1,5 +1,6 @@
 #Logo_main {
   width: 100px;
+  height: 150px;
 }
 
 #Name {
@@ -32,8 +33,8 @@ body {
 }
 
 .icons {
-  width: 130px;
-  margin: 30px;
+  width: 150px;
+  margin: 10px;
   border-width: 5px;
   border-radius: 10%;
   border-color: white;
@@ -59,9 +60,7 @@ a {
 }
 
 .card_element {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  height: 200px;
   text-align: center;
   padding: 10px;
   margin: 10px;
@@ -75,6 +74,8 @@ a {
 .card-header {
   border-bottom-color: white;
   border-bottom-width: 5px;
+  border-bottom-style: ridge;
+  height: 75%;
 }
 
 #map {
@@ -93,8 +94,12 @@ a {
   position: relative;
 }
 
-#content a {
-  display: block;
+.container-fluid {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  padding: 10px;
 }
 
 #menu10 {
@@ -104,7 +109,7 @@ a {
   background-color: #543c52;
 }
 
-#menu1, #menu2, #menu3, #menu4, #menu5, #menu6, #menu7, #menu8, #menu9, #menu12, #menu13, #menu14, #menu15, #menu11 {
+#menu1, #menu2, #menu3, #menu4, #menu5, #menu6, #menu7, #menu8, #menu9, #menu12, #menu13, #menu14, #menu15, #menu11, #content {
   background-color: #543c52;
   color: white;
   display: none;
@@ -112,6 +117,33 @@ a {
   width: 100%;
   border-style: double;
   border-width: 10px;
+}
+
+.info, .info .card-header, .info .card-body {
+  color: black;
+  border-style: none;
+  border-color: none;
+}
+
+.info {
+  background-color: white;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.link_none {
+  text-decoration: none;
+  color: black;
+}
+
+.home {
+  width: 100px;
+}
+
+.flt {
+  float: left;
+  width: 300px;
 }
 
 /* end of pop up's */

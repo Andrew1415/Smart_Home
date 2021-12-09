@@ -13,8 +13,22 @@ if (alertTrigger) {
   })
 }
 
+function myAlert(alert){
+  document.getElementById('alert').style.display="block";
+  switch (alert){
+    //var delayInMilliseconds = 5000;
+    case 0: document.getElementById("alert").innerHTML = ''; break;
+    case 1: document.getElementById("alert").innerHTML = '<div class="alert alert-success" role="alert"><p><img src="icons/lock-closed.svg" style="width:20px;">Front door has been locked</p></div>'; var delayInMilliseconds = 5000; break;
+    case 2: document.getElementById("alert").innerHTML = '<div class="alert alert-danger" role="alert"><p><img src="icons/lock-open.svg" style="width:20px;">Front door has been unlocked</p></div>';var delayInMilliseconds = 5000;  break;
+  }
+//document.getElementById("content").innerHTML = '';
+ //5 second
 
-
+setTimeout(function() {
+  document.getElementById("alert").innerHTML = "";
+  document.getElementById('alert').style.display="none";
+}, delayInMilliseconds);
+}
 
 
 

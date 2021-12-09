@@ -10,18 +10,12 @@ function showMenu(menuId)  {
     document.getElementById('menu8').style.display="none";
     document.getElementById('menu9').style.display="none";
     document.getElementById('menu10').style.display="none";
-  
-    //display the menu for this area of the image
-    document.getElementById(menuId).style.display="block";
-    }
-
-function florePlan(menuId){
-
     document.getElementById('menu11').style.display="none";
     document.getElementById('menu12').style.display="none";
     document.getElementById('menu13').style.display="none";
     document.getElementById('menu14').style.display="none";
     document.getElementById('menu15').style.display="none";
-
+  
+    //display the menu for this area of the image
     document.getElementById(menuId).style.display="block";
-}
+    }
