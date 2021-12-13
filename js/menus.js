@@ -1,0 +1,80 @@
+$("#menu1button").click(function(){
+    $("#menu10").hide();
+    $("#menu1").show();
+})
+$("#menu2button").click(function(){
+    $("#menu10").hide();
+    $("#menu2").show();
+})
+$("#menu3button").click(function(){
+    $("#menu10").hide();
+    $("#menu3").show();
+})
+$("#menu4button").click(function(){
+    $("#menu10").hide();
+    $("#menu4").show();
+})
+$(".menu5button").click(function(){
+    $("#menu10").hide();
+    $("#menu11").hide();
+    $("#menu12").hide();
+    $("#menu13").hide();
+    $("#menu14").hide();
+    $("#menu15").hide();
+    $("#menu5").show();
+})
+$("#menu6button").click(function(){
+    $("#menu10").hide();
+    $("#menu6").show();
+})
+$("#menu7button").click(function(){
+    $("#menu10").hide();
+    $("#menu7").show();
+})
+$("#menu8button").click(function(){
+    $("#menu10").hide();
+    $("#menu8").show();
+})
+$("#menu9button").click(function(){
+    $("#menu10").hide();
+    $("#menu9").show();
+})
+$("#menu11button").click(function(){
+    $("#menu5").hide();
+    $("#menu11").show();
+})
+$("#menu12button").click(function(){
+    $("#menu5").hide();
+    $("#menu12").show();
+})
+$("#menu13button").click(function(){
+    $("#menu5").hide();
+    $("#menu13").show();
+})
+$("#menu14button").click(function(){
+    $("#menu5").hide();
+    $("#menu14").show();
+})
+$("#menu15button").click(function(){
+    $("#menu5").hide();
+    $("#menu15").show();
+})
+
+$(".menu10button").click(function(){
+    $("#menu1").hide();
+    $("#menu2").hide();
+    $("#menu3").hide();
+    $("#menu4").hide();
+    $("#menu5").hide();
+    $("#menu6").hide();
+    $("#menu7").hide();
+    $("#menu8").hide();
+    $("#menu9").hide();
+    $("#menu11").hide();
+    $("#menu12").hide();
+    $("#menu13").hide();
+    $("#menu14").hide();
+    $("#menu15").hide();
+    $("#menu10").show();
+})
+

@@ -6,85 +6,88 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="stiliai.css">
         <title>Smart House</title>
-        
     </head>
     <body> 
         <main>
+            <div id="alert" style="position: absolute; top: 8px; left: 16px; font-size: 18px;"></div>
             <div class="container-fluid">
-                <div id="alert"></div>
                 <div class="col-12 col-xl-10 offset-xl-1">
                     <div class="row">
                         <!-- Main menu -->
                         <div class="card" id="menu10">
                             <div class="row">
-                                <div class="col-4">
-                                    <div class="flt"><p><img src="icons/lock.png" class="icons" alt="Lock's" onclick="showMenu('menu1')" role="button"></p></div>
-                                    <div class="flt"><p><img src="icons/cctv.png" alt="cctv" class="icons"  onclick="showMenu('menu2')" role="button"></p></div>
-                                    <div class="flt"><p><img src="icons/information.png" class="icons" alt=""  onclick="showMenu('menu3')" role="button"></p></div>
+                                <div class="col-6 col-xl-4">
+                                    <div class="flt"><p><img src="icons/lock.png" class="icons" alt="Lock's" role="button" id="menu1button"></p></div>
+                                    <div class="flt"><p><img src="icons/windows.png" class="icons" alt="Windows/Blinds" role="button" id="menu6button"></p></div>
+                                    <div class="flt"><p><img src="icons/light_bulb.png" alt="Lighting system" class="icons" role="button" id="menu8button"></p></div>
                                 </div>
-                                <div class="col-4">
-                                    <div class="flt"><p><img src="icons/air-conditioner.png" class="icons" alt="Climate controls"  onclick="showMenu('menu4')" role="button"></p></div>
-                                    <div class="flt"><p><img src="icons/house.png" class="icons" alt="Home" onclick="showMenu('menu5')" role="button"></p></div>
-                                    <div class="flt"><p><img src="icons/windows.png" class="icons" alt="Windows/Blinds" onclick="showMenu('menu6')" role="button"></p></div>
+                                <div class="col-6 col-xl-4">
+                                    <div class="flt"><p><img src="icons/cctv.png" alt="cctv" class="icons"  role="button" id="menu2button"></p></div>
+                                    <div class="flt"><p><img src="icons/house.png" class="icons menu5button" alt="Home" role="button"></p></div>
+                                    <div class="flt"><p><img src="icons/electric-appliance.png" class="icons" alt="Tv's" role="button" id="menu9button"></p></div>
                                 </div>
-                                <div class="col-4">
-                                    <div class="flt"><p><img src="icons/tap.png" class="icons" alt="Water systems" onclick="showMenu('menu7')" role="button"></p></div>
-                                    <div class="flt"><p><img src="icons/light_bulb.png" alt="Lighting system" class="icons" onclick="showMenu('menu8')" role="button"></p></div>
-                                    <div class="flt"><p><img src="icons/tv.png" class="icons" alt="Tv's" onclick="showMenu('menu9')" role="button"></p></div>
-                                </div>
-                            </div>
+                                <div class="col-0 col-xl-4">
+                                    <div class="flt"><p><img src="icons/air-conditioner.png" class="icons" alt="Climate controls" role="button" id="menu4button"></p></div>
+                                    <div class="flt"><p><img src="icons/tap.png" class="icons" alt="Water systems"  role="button" id="menu7button"</p></div>
+                                    <div class="flt"><p><img src="icons/support.png" class="icons" alt=""  role="button" id="menu3button"></p></div> 
+                                </div> 
+                            </div>           
                         </div>
                         <!-- Menues  -->
                         <!-- Menu  1 -->
                         <div class="card" id="menu1">
-                            <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu10');" role="button">&#129044;</a>Locks</h1>
-                            <div class="card card_element col-5 col-lg-3">
-                                        <div class="card-header">
-                                            Front door
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="btn-group" role="group" aria-label="Front_Lock">
-                                                <input type="radio" class="btn-check" name="Front_Lock" id="front_lock"  autocomplete="off" checked>
-                                                <label class="btn btn-outline-success" for="front_lock" onclick="myAlert(1)">Lock</label>
-                                        
-                                                <input type="radio" class="btn-check" name="Front_Lock" id="front_unlock" autocomplete="off">
-                                                <label class="btn btn-outline-danger" for="front_unlock" onclick="myAlert(2)">Unlock</label>
+                            <h1><div class="btn btn-danger button_back menu10button"role="button">&#129044;</div>Locks</h1>
+                            <div class="container">
+                                <div class="card card_element">
+                                            <div class="card-header">
+                                                Front door
                                             </div>
-                                        </div>
-                            </div>
-                            <div class="card card_element col-5 col-lg-3">
-                                        <div class="card-header">
-                                           Rear door 
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="btn-group" role="group" aria-label="Rear_lock">
-                                                <input type="radio" class="btn-check" name="Rear_lock" id="btnradio3" autocomplete="off" checked>
-                                                <label class="btn btn-outline-success" for="btnradio3">Lock</label>
-                                        
-                                                <input type="radio" class="btn-check" name="Rear_lock" id="btnradio4" autocomplete="off">
-                                                <label class="btn btn-outline-danger" for="btnradio4">Unlock</label>
-                                            </div>
-                                        </div>
-                            </div>
-                            <div class="card card_element col-5 col-lg-3">
-                                        <div class="card-header">
-                                            Master Bedroom
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="btn-group" role="group" aria-label="M_Bedroom_Lock">
-                                                <input type="radio" class="btn-check" name="M_Bedroom_Lock" id="M_Bedroom_Lock" autocomplete="off" checked>
-                                                <label class="btn btn-outline-success" for="M_Bedroom_Lock">Lock</label>
+                                            <div class="card-body">
+                                                <div class="btn-group" role="group" aria-label="Front_Lock">
+                                                    <input type="radio" class="btn-check" name="Front_Lock" id="front_lock"  autocomplete="off" checked>
+                                                    <label class="btn btn-outline-success" for="front_lock">Lock</label>
                                             
-                                                <input type="radio" class="btn-check" name="M_Bedroom_Lock" id="M_Bedroom_unLock" autocomplete="off">
-                                                <label class="btn btn-outline-danger" for="M_Bedroom_unLock">Unlock</label>
-                                            </div>  
-                                        </div>
-                            </div>       
+                                                    <input type="radio" class="btn-check" name="Front_Lock" id="front_unlock" autocomplete="off">
+                                                    <label class="btn btn-outline-danger" for="front_unlock">Unlock</label>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="card card_element">
+                                            <div class="card-header">
+                                            Rear door 
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="btn-group" role="group" aria-label="Rear_lock">
+                                                    <input type="radio" class="btn-check" name="Rear_lock" id="btnradio3" autocomplete="off" checked>
+                                                    <label class="btn btn-outline-success" for="btnradio3">Lock</label>
+                                            
+                                                    <input type="radio" class="btn-check" name="Rear_lock" id="btnradio4" autocomplete="off">
+                                                    <label class="btn btn-outline-danger" for="btnradio4">Unlock</label>
+                                                </div>
+                                            </div>
+                                </div>
+                                <div class="card card_element">
+                                            <div class="card-header">
+                                                Master Bedroom
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="btn-group" role="group" aria-label="M_Bedroom_Lock">
+                                                    <input type="radio" class="btn-check" name="M_Bedroom_Lock" id="M_Bedroom_Lock" autocomplete="off" checked>
+                                                    <label class="btn btn-outline-success" for="M_Bedroom_Lock">Lock</label>
+                                                
+                                                    <input type="radio" class="btn-check" name="M_Bedroom_Lock" id="M_Bedroom_unLock" autocomplete="off">
+                                                    <label class="btn btn-outline-danger" for="M_Bedroom_unLock">Unlock</label>
+                                                </div>  
+                                            </div>
+                                </div>  
+                            </div>
+
+
+                                  
                         </div>
-                             
                         <!-- Menu  2 -->
                         <div class="card" id="menu2">
-                                <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu10');" role="button">&#129044;</a>CCTV</h1>
+                                <h1><div class="btn btn-danger button_back menu10button"" role="button">&#129044;</div>CCTV</h1>
                                 <div class="card card_element col-5 col-lg-3">
                                     <div class="card-header">
                                         Kitchen
@@ -123,7 +126,7 @@
                         </div>
                         <!-- Menu  3 -->
                         <div class="card" id="menu3">
-                            <H1><a class="btn btn-danger button_back" href="javascript:showMenu('menu10');" role="button">&#129044;</a>Information</H1>
+                            <H1><div class="btn btn-danger button_back menu10button" role="button">&#129044;</div>Information</H1>
                             
                             <div class="card info col-5 col-lg-3">
                                 <div class="card-header">
@@ -137,7 +140,7 @@
                         </div>
                         <!-- Menu  4 -->
                         <div class="card" id="menu4">
-                             <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu10');" role="button">&#129044;</a>Climate cotrol</h1>
+                             <h1><div class="btn btn-danger button_back menu10button" role="button">&#129044;</div>Climate cotrol</h1>
                              <div class="card card_element col-5 col-lg-3">
                                 <div class="card-header">
                                     Master Bedroom AC
@@ -238,22 +241,22 @@
                         </div>
                         <!-- Menu  5 -->
                         <div class="card" id="menu5">
-                            <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu10');" role="button">&#129044;</a>Floor plane</h1>
+                            <h1><div class="btn btn-danger button_back menu10button" role="button">&#129044;</div>Floor plane</h1>
                             <div class="row">
                                         <p><img src="Drawing1.png" usemap="#workmap" id="map"></p>
                                         <map name="workmap">
-                                            <area shape="rect" coords="411,273,863,498" alt="Master Bedroom" onclick="showMenu('menu11')" role="button">
-                                            <area shape="rect" coords="33,273,409,498" alt="Home office" onclick="showMenu('menu12')" role="button">
-                                            <area shape="rect" coords="33,46,258,271" alt="Kitchen" onclick="showMenu('menu13')" role="button">
-                                            <area shape="rect" coords="260,46,409,195" alt="Bathroom & toilet" onclick="showMenu('menu14')" role="button">
-                                            <area shape="poly" coords="411,46,485,49,485,274,259,274,259,200,411,200" alt="Corridor" onclick="showMenu('menu15')" role="button">
+                                            <area shape="rect" coords="411,273,863,498" alt="Master Bedroom" id="menu11button" role="button">
+                                            <area shape="rect" coords="33,273,409,498" alt="Home office" id="menu12button" role="button">
+                                            <area shape="rect" coords="33,46,258,271" alt="Kitchen" id="menu13button" role="button">
+                                            <area shape="rect" coords="260,46,409,195" alt="Bathroom & toilet" id="menu14button" role="button">
+                                            <area shape="poly" coords="411,46,485,49,485,274,259,274,259,200,411,200" alt="Corridor" id="menu15button" role="button">
                                         </map>
                             </div>        
                                 
                         </div>
                         <!-- Menu  6 -->
                         <div class="card" id="menu6">
-                            <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu10');" role="button">&#129044;</a>Windows & Blinds </h1>  
+                            <h1><div class="btn btn-danger button_back menu10button" role="button">&#129044;</div>Windows & Blinds </h1>  
                             <div class="card card_element col-5 col-lg-3">
                                 <card class="card-header">
                                     Master Bedroom Blinds
@@ -299,8 +302,9 @@
                         </div>
                         <!-- Menu  7 -->
                         <div class="card" id="menu7">
-                            <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu10');" role="button">&#129044;</a>Showers / sinks / taps </h1>  
-                            <div class="card card_element col-5 col-lg-3">
+                            <h1><div class="btn btn-danger button_back menu10button" role="button">&#129044;</div>Showers / sinks / taps </h1>  
+                            <div class="container">
+                            <div class="card card_element">
                                 <div class="card-header">
                                     Shower
                                 </div>
@@ -331,7 +335,7 @@
                                       </select>
                                 </div>
                             </div>
-                            <div class="card card_element col-5 col-lg-3">
+                            <div class="card card_element">
                                 <div class="card-header">
                                     Bathroom Sink
                                 </div>
@@ -362,7 +366,7 @@
                                       </select>
                                 </div>
                             </div>
-                            <div class="card card_element col-5 col-lg-3">
+                            <div class="card card_element">
                                 <div class="card-header">
                                     Kitchen Sink
                                 </div>
@@ -393,12 +397,13 @@
                                       </select>
                                 </div>
                             </div>
+                            </div>
                         
                         </div>
                         <!-- Menu  8 -->
                         <div class="card" id="menu8">
-                            <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu10');" role="button">&#129044;</a>Lighting system </h1>   
-                            <div class="overflow-auto">
+                            <h1><div class="btn btn-danger button_back menu10button"role="button">&#129044;</div>Lighting system </h1> 
+                            <div class="container">
                                 <div class="card card_element col-5 col-lg-3">
                                     <card class="card-header">
                                         Master Bedroom Main Light
@@ -530,11 +535,19 @@
                         </div>
                         <!-- Menu  9 -->
                         <div class="card" id="menu9">
-                            <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu10');" role="button">&#129044;</a> TV's </h1>    
+                            <h1><div class="btn btn-danger button_back menu10button"  role="button">&#129044;</div> Home appliances </h1> 
+                            <!-- <div class="card card_element">
+                                <div class="card-header"></div>
+                                <div class="card-body">
+                                    <p><span id="slider_value" style="color:red;"></span></p> 
+                                    18<input class="form-range" type="range" min="18" max="28" name="sld3" step="0.5" onchange="show_value(this.value);">28
+                                </div>
+                            </div>    -->
+                            
                         </div>
                         <!-- Menu  11 -->
                         <div class="card" id="menu11">
-                            <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu5');" role="button">&#129044;</a> Master Bedroom </h1> 
+                            <h1><div class="btn btn-danger button_back menu5button" role="button">&#129044;</div> Master Bedroom </h1> 
                             <div class="card card_element col-5 col-lg-3">
                                 <div class="card-header">
                                     Lock
@@ -586,12 +599,12 @@
                                     Blinds
                                 </card>
                                 <div class="card-body">
-                                    <div class="btn-group" role="group" aria-label="Bedroom_Window_blinds">
-                                        <input type="radio" class="btn-check" name="Bedroom_Window_blinds" id="Master_blinds_Open"autocomplete="off" checked>
+                                    <div class="btn-group" role="group" aria-label="Bedroom_Window2_blinds">
+                                        <input type="radio" class="btn-check" name="Bedroom_Window2_blinds" id="Master_blinds2_Open"autocomplete="off" checked>
                                         <label class="btn btn-outline-success" for="Master_blinds_Open">Open</label>
                                 
-                                        <input type="radio" class="btn-check" name="Bedroom_Window_blinds" id="Master_blinds_Closed" autocomplete="off">
-                                        <label class="btn btn-outline-danger" for="Master_blinds_Closed">Close</label>
+                                        <input type="radio" class="btn-check" name="Bedroom_Window2_blinds" id="Master_blinds2_Closed" autocomplete="off">
+                                        <label class="btn btn-outline-danger" for="Master_blinds2_Closed">Close</label>
                                     </div>
                                 </div>
                             </div>
@@ -600,12 +613,12 @@
                                     Main Light
                                 </card>
                                 <div class="card-body">
-                                    <div class="btn-group" role="group" aria-label="Bedroom_Main_Light">
-                                        <input type="radio" class="btn-check" name="Bedroom_Main_Light" id="Master_Bedroom_Main_Light_ON"autocomplete="off" checked>
-                                        <label class="btn btn-outline-success" for="Master_Bedroom_Main_Light_ON">ON</label>
+                                    <div class="btn-group" role="group" aria-label="Bedroom_Main_Light2">
+                                        <input type="radio" class="btn-check" name="Bedroom_Main_Light2" id="Master_Bedroom_Main_Light2_ON"autocomplete="off" checked>
+                                        <label class="btn btn-outline-success" for="Master_Bedroom_Main_Light2_ON">ON</label>
                                 
-                                        <input type="radio" class="btn-check" name="Bedroom_Main_Light" id="Master_Bedroom_Main_Light_OFF" autocomplete="off">
-                                        <label class="btn btn-outline-danger" for="Master_Bedroom_Main_Light_OFF">OFF</label>
+                                        <input type="radio" class="btn-check" name="Bedroom_Main_Light2" id="Master_Bedroom_Main_Light2_OFF" autocomplete="off">
+                                        <label class="btn btn-outline-danger" for="Master_Bedroom_Main_Light2_OFF">OFF</label>
                                     </div>
                                 </div>
                             </div>  
@@ -614,19 +627,19 @@
                                     Ambient Light
                                 </card>
                                 <div class="card-body">
-                                    <div class="btn-group" role="group" aria-label="Bedroom_Ambient_Light">
-                                        <input type="radio" class="btn-check" name="Bedroom_Ambient_Light" id="Master_Bedroom_Ambient_Light_ON"autocomplete="off" checked>
-                                        <label class="btn btn-outline-success" for="Master_Bedroom_Ambient_Light_ON">ON</label>
+                                    <div class="btn-group" role="group" aria-label="Bedroom_Ambient_Light2">
+                                        <input type="radio" class="btn-check" name="Bedroom_Ambient_Light2" id="Master_Bedroom_Ambient_Light2_ON"autocomplete="off" checked>
+                                        <label class="btn btn-outline-success" for="Master_Bedroom_Ambient_Light2_ON">ON</label>
                                 
-                                        <input type="radio" class="btn-check" name="Bedroom_Ambient_Light" id="Master_Bedroom_Ambient_Light_OFF" autocomplete="off">
-                                        <label class="btn btn-outline-danger" for="Master_Bedroom_Ambient_Light_OFF">OFF</label>
+                                        <input type="radio" class="btn-check" name="Bedroom_Ambient_Light2" id="Master_Bedroom_Ambient_Light2_OFF" autocomplete="off">
+                                        <label class="btn btn-outline-danger" for="Master_Bedroom_Ambient_Light2_OFF">OFF</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Menu  12 -->
                         <div class="card" id="menu12">
-                            <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu5');" role="button">&#129044;</a> Home Office </h1> 
+                            <h1><div class="btn btn-danger button_back menu5button" role="button">&#129044;</div> Home Office </h1> 
                             <div class="card card_element col-5 col-lg-3">
                                 <div class="card-header">
                                     Home Office
@@ -665,11 +678,11 @@
                                     </card>
                                     <div class="card-body">
                                         <div class="btn-group" role="group" aria-label="Office_blinds2">
-                                            <input type="radio" class="btn-check" name="Office_blinds2" id="Office_blinds_Open"autocomplete="off" checked>
-                                            <label class="btn btn-outline-success" for="Office_blinds_Open">Open</label>
+                                            <input type="radio" class="btn-check" name="Office_blinds2" id="Office_blinds2_Open"autocomplete="off" checked>
+                                            <label class="btn btn-outline-success" for="Office_blinds2_Open">Open</label>
                                     
-                                            <input type="radio" class="btn-check" name="Office_blinds2" id="Office_blinds_Closed" autocomplete="off">
-                                            <label class="btn btn-outline-danger" for="Office_blinds_Closed">Close</label>
+                                            <input type="radio" class="btn-check" name="Office_blinds2" id="Office_blinds2_Closed" autocomplete="off">
+                                            <label class="btn btn-outline-danger" for="Office_blinds2_Closed">Close</label>
                                         </div>
                                     </div>
                             </div>  
@@ -696,8 +709,8 @@
                                             <input type="radio" class="btn-check" name="office_Ambient_Light" id="office_Ambient_Light_on"autocomplete="off" checked>
                                             <label class="btn btn-outline-success" for="office_Ambient_Light_on">ON</label>
                                     
-                                            <input type="radio" class="btn-check" name="office_Main_Light" id="office_Ambient_Light_on" autocomplete="off">
-                                            <label class="btn btn-outline-danger" for="office_Ambient_Light_on">OFF</label>
+                                            <input type="radio" class="btn-check" name="office_Main_Light" id="office_Ambient_Light_off" autocomplete="off">
+                                            <label class="btn btn-outline-danger" for="office_Ambient_Light_off">OFF</label>
                                         </div>
                                     </div>
                             </div>
@@ -705,7 +718,7 @@
                         </div>
                         <!-- Menu  13 -->
                         <div class="card" id="menu13">
-                            <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu5');" role="button">&#129044;</a> Kitchen </h1> 
+                            <h1><div class="btn btn-danger button_back menu5button" role="button">&#129044;</div> Kitchen </h1> 
                             <div class="card card_element col-5 col-lg-3">
                                 <div class="card-header">
                                     Kitchen
@@ -757,14 +770,14 @@
                                     Kitchen Sink
                                 </div>
                                 <div class="card-body">
-                                    <div class="btn-group" role="group" aria-label="KitchenSink">
-                                        <input type="radio" class="btn-check" name="KitchenSink" id="KitchenSink_ON"  autocomplete="off">
-                                        <label class="btn btn-outline-success" for="KitchenSink_ON">ON</label>
+                                    <div class="btn-group" role="group" aria-label="KitchenSink2">
+                                        <input type="radio" class="btn-check" name="KitchenSink2" id="KitchenSink2_ON"  autocomplete="off">
+                                        <label class="btn btn-outline-success" for="KitchenSink2_ON">ON</label>
                                 
-                                        <input type="radio" class="btn-check" name="KitchenSink" id="KitchenSink_OFF" autocomplete="off" checked>
-                                        <label class="btn btn-outline-danger" for="KitchenSink_OFF">OFF</label>
+                                        <input type="radio" class="btn-check" name="KitchenSink2" id="KitchenSink2_OFF" autocomplete="off" checked>
+                                        <label class="btn btn-outline-danger" for="KitchenSink2_OFF">OFF</label>
                                     </div>
-                                    <select class="form-select" aria-label="BathroomSink">
+                                    <select class="form-select" aria-label="KitchenSink">
                                         <option selected>Select the temperature</option>
                                         <option value="15">15 &#8451</option>
                                         <option value="16">16 &#8451</option>
@@ -815,7 +828,7 @@
                         </div>
                         <!-- Menu  14 -->
                         <div class="card" id="menu14">
-                            <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu5');" role="button">&#129044;</a> Bathroom and WC </h1>
+                            <h1><div class="btn btn-danger button_back menu5button" role="button">&#129044;</div> Bathroom and WC </h1>
                             <div class="card card_element col-5 col-lg-3">
                                 <div class="card-header">
                                     AC
@@ -921,7 +934,7 @@
                         </div>
                         <!-- Menu  15 -->
                         <div class="card" id="menu15">
-                            <h1><a class="btn btn-danger button_back" href="javascript:showMenu('menu5');" role="button">&#129044;</a> Corridor </h1>
+                            <h1><div class="btn btn-danger button_back menu5button"  role="button">&#129044;</div> Corridor </h1>
                             <div class="card card_element col-5 col-lg-3">
                                 <div class="card-header">
                                     Front door
@@ -980,12 +993,12 @@
                     </div>
                 </div>
             </div>
-        
         </main>
-
         <!-- <script src="js/bootstrap.min.js" ></script> -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <script src="menus.js" ></script>
-        <script src="alerts.js" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/menus.js" ></script>
+        <!-- <script src="js/alerts.js" ></script> -->
+        <script src="js/script.js"></script>
     </body>
 </html>
