@@ -8,12 +8,10 @@
   font-weight: bold;
   font-size: 10px;
 }
-
+html{
+  background-image: url("93034.jpg") ;
+}
 body {
-  background-color: #361d32;
-  /*background-image: url(bg.jpg);*/
-  background-size: 100%;
-  background-repeat: no-repeat;
   margin-top: 50px;
   font-family: 'Comfortaa', cursive;
 }
@@ -35,8 +33,7 @@ body {
   width: 150px;
   margin: 20px;
   border-color: white;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
+  filter: invert(100%);
 }
 
 p {
@@ -44,7 +41,6 @@ p {
 }
 
 h6 {
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   font-size: 20px;
   color: red;
@@ -142,5 +138,6 @@ a {
   float: left;
   width: 300px;
 }
+//.text-center
 /* end of pop up's */
 /*# sourceMappingURL=stiliai.css.map */
