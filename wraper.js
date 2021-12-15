@@ -1,4 +1,0 @@
-var front_lock=document.getElementById('front_lock')
-var wrapper = document.createElement('div')
-wrapper.innerHTML = '<div class="card card_element"> <div class="card-header"> Front door </div> <div class="card-body"> <div class="btn-group" role="group" aria-label="Front_Lock"> <input type="radio" class="btn-check" name="Front_Lock" id="front_lock"  autocomplete="off" checked> <label class="btn btn-outline-primary" for="front_lock">Lock</label> <input type="radio" class="btn-check" name="Front_Lock" id="front_unlock" autocomplete="off"> <label class="btn btn-outline-primary" for="front_unlock">Unlock</label> </div> </div>'
-front_lock.append(wrapper)
