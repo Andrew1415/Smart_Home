@@ -8,20 +8,20 @@
   font-weight: bold;
   font-size: 10px;
 }
-html{
-  background-image: url("93034.jpg") ;
-}
+// html{
+  
+// }
 body {
   margin-top: 50px;
   font-family: 'Comfortaa', cursive;
+  background-image: url("93034.jpg") ;
 }
 
 .card {
-  /*background-color: rgb(4, 9, 49);*/
   background-color: black;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  // height: -webkit-fit-content;
+  // height: -moz-fit-content;
+  // height: fit-content;
   border-color: white;
   border-width: 5px;
   margin-right: 5px;
@@ -54,20 +54,20 @@ a {
 
 .card_element {
   width: 30%;
-  max-width: 350px;
+  max-width: 400px;
   height: 200px;
   text-align: center;
   padding: 10px;
   margin: 10px;
+  margin-left: 20px;
   float: left;
   border-radius: 50px;
   font-size: 20px;
-  background-color:#edd2cb;
+  background-color:darkgray;
   color:black;
 }
 
 .card-header {
-  border-bottom-color: white;
   border-bottom-width: 5px;
   border-bottom-style: ridge;
   height: 75%;
@@ -90,18 +90,19 @@ a {
   position: absolute;
  top: 50%;
   transform: translate(0, -50%);
-  padding: 10px; 
+  //padding: 10px; 
+background-color: none;
 }
 #menu10 {
-  display: block;
+  display: none;
   border-style: double;
   border-width: 10px;  
-  background-color: #543c52;
+  background-color: black;
 
 }
 
 #menu1, #menu2, #menu3, #menu4, #menu5, #menu6, #menu7, #menu8, #menu9, #menu12, #menu13, #menu14, #menu15, #menu11, #content {
-  background-color: #543c52;
+  background-color: black;
   color: white;
   display: none;
   position: relative;

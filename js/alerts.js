@@ -45,7 +45,7 @@ $("#Master_blinds_Open, #Master_blinds2_Open").click(function(){
 })
 $("#Master_blinds_Closed, #Master_blinds2_Closed").click(function(){
     $("#alert").append(function(){
-        return "<div id='Master_blinds_Closed_Alert'><div class='alert alert-success' > Bedroom blinds are being closed. </div></div>";
+        return "<div id='Master_blinds_Closed_Alert'><div class='alert alert-danger' > Bedroom blinds are being closed. </div></div>";
     });
     setTimeout(function(){
         $("#Master_blinds_Closed_Alert").remove();
@@ -63,7 +63,7 @@ $("#Office_blinds_Open, #Office_blinds2_Open").click(function(){
 })
 $("#Office_blinds_Closed, #Office_blinds2_Closed").click(function(){
     $("#alert").append(function(){
-        return "<div id='Office_blinds_Closed_Alerts'><div class='alert alert-success' > Office blinds are being closed. </div></div>";
+        return "<div id='Office_blinds_Closed_Alerts'><div class='alert alert-danger' > Office blinds are being closed. </div></div>";
     });
     setTimeout(function(){
         $("#Office_blinds_Closed_Alerts").remove();
@@ -81,7 +81,7 @@ $("#Kitchen_blinds_Open, #Kitchen_blinds2_Open").click(function(){
 })
 $("#Kitchen_blinds_Closed, #Kitchen_blinds2_Closed").click(function(){
     $("#alert").append(function(){
-        return "<div id='Kitchen_blinds_Closed_Alerts'><div class='alert alert-success' > Kitchen blinds are being closed. </div></div>";
+        return "<div id='Kitchen_blinds_Closed_Alerts'><div class='alert alert-danger' > Kitchen blinds are being closed. </div></div>";
     });
     setTimeout(function(){
         $("#Kitchen_blinds_Closed_Alerts").remove();
@@ -99,7 +99,7 @@ $("#Shower_on, #Shower2_on").click(function(){
 })
 $("#Shower_off, #Shower2_off ").click(function(){
     $("#alert").append(function(){
-        return "<div id='Shower_off_Alerts'><div class='alert alert-success' > The shower has been turned off. </div></div>";
+        return "<div id='Shower_off_Alerts'><div class='alert alert-danger' > The shower has been turned off. </div></div>";
     });
     setTimeout(function(){
         $("#Shower_off_Alerts").remove();
@@ -108,7 +108,7 @@ $("#Shower_off, #Shower2_off ").click(function(){
 })
 $("#BathroomSink_OFF, #BathroomSink2_OFF").click(function(){
     $("#alert").append(function(){
-        return "<div id='BathroomSink_OFF_Alerts'><div class='alert alert-success' > Bathroom sink tap has been turned off. </div></div>";
+        return "<div id='BathroomSink_OFF_Alerts'><div class='alert alert-danger' > Bathroom sink tap has been turned off. </div></div>";
     });
     setTimeout(function(){
         $("#BathroomSink_OFF_Alerts").remove();
@@ -135,7 +135,7 @@ $("#KitchenSink_ON, #KitchenSink2_ON").click(function(){
 })
 $("#KitchenSink_OFF, #KitchenSink2_OFF").click(function(){
     $("#alert").append(function(){
-        return "<div id='KitchenSink_OFF_Alerts'><div class='alert alert-success' > Kitchen sink tap has been turned off. </div></div>";
+        return "<div id='KitchenSink_OFF_Alerts'><div class='alert alert-danger' > Kitchen sink tap has been turned off. </div></div>";
     });
     setTimeout(function(){
         $("#KitchenSink_OFF_Alerts").remove();
@@ -153,7 +153,7 @@ $("#Master_Bedroom_Main_Light_ON, #Master_Bedroom_Main_Light2_ON").click(functio
 })
 $("#Master_Bedroom_Main_Light_OFF, #Master_Bedroom_Main_Light2_OFF ").click(function(){
     $("#alert").append(function(){
-        return "<div id='Master_Bedroom_Main_Light_OFF_Alert'><div class='alert alert-success' > Bedroom main light has been turned off. </div></div>";
+        return "<div id='Master_Bedroom_Main_Light_OFF_Alert'><div class='alert alert-danger' > Bedroom main light has been turned off. </div></div>";
     });
     setTimeout(function(){
         $("#Master_Bedroom_Main_Light_OFF_Alert").remove();
@@ -171,7 +171,7 @@ $("#Master_Bedroom_Ambient_Light_ON, #Master_Bedroom_Ambient_Light2_ON").click(f
 })
 $("#Master_Bedroom_Ambient_Light_OFF ,#Master_Bedroom_Ambient_Light2_OFF ").click(function(){
     $("#alert").append(function(){
-        return "<div id='Master_Bedroom_Ambient_Light_OFF_Alert'><div class='alert alert-success' > Bedroom ambient light has been turned off. </div></div>";
+        return "<div id='Master_Bedroom_Ambient_Light_OFF_Alert'><div class='alert alert-danger' > Bedroom ambient light has been turned off. </div></div>";
     });
     setTimeout(function(){
         $("#Master_Bedroom_Ambient_Light_OFF_Alert").remove();
@@ -187,9 +187,9 @@ $("#office_Main_Light_System_on ,#office_Main_Light_on ").click(function(){
     }, 2000);
 
 })
-$("#office_Main_Light_System_off ,#office_Main_Light_on ").click(function(){
+$("#office_Main_Light_System_off ,#office_Main_Light_off ").click(function(){
     $("#alert").append(function(){
-        return "<div id='office_Main_Light_System_off_Alert'><div class='alert alert-success' > Office main light has been turned off. </div></div>";
+        return "<div id='office_Main_Light_System_off_Alert'><div class='alert alert-danger' > Office main light has been turned off. </div></div>";
     });
     setTimeout(function(){
         $("#office_Main_Light_System_off_Alert").remove();
@@ -207,7 +207,7 @@ $("#office_Ambient_Light_System_on ,#office_Ambient_Light_on ").click(function()
 })
 $("#office_Ambient_Light_System_off,#office_Ambient_Light_off").click(function(){
     $("#alert").append(function(){
-        return "<div id='office_Ambient_Light_System_off_Alert'><div class='alert alert-success' > Office ambient light has been turned off. </div></div>";
+        return "<div id='office_Ambient_Light_System_off_Alert'><div class='alert alert-danger' > Office ambient light has been turned off. </div></div>";
     });
     setTimeout(function(){
         $("#office_Ambient_Light_System_off_Alert").remove();
@@ -225,7 +225,7 @@ $("#Kitchen_Main_Light2_ON,#Kitchen_Main_Light_ON ").click(function(){
 })
 $("#Kitchen_Main_Light2_OFF ,#Kitchen_Main_Light_OFF ").click(function(){
     $("#alert").append(function(){
-        return "<div id='Kitchen_Main_Light2_OFF_Alert'><div class='alert alert-success' > Kitchen main light has been turned off. </div></div>";
+        return "<div id='Kitchen_Main_Light2_OFF_Alert'><div class='alert alert-danger' > Kitchen main light has been turned off. </div></div>";
     });
     setTimeout(function(){
         $("#Kitchen_Main_Light2_OFF_Alert").remove();
@@ -243,7 +243,7 @@ $("#Kitchen_Ambient_Light2_ON ,#Kitchen_Ambient_Light_ON").click(function(){
 })
 $("#Kitchen_Ambient_Light2_OFF ,#Kitchen_Ambient_Light_OFF ").click(function(){
     $("#alert").append(function(){
-        return "<div id='Kitchen_Ambient_Light2_OFF_Alert'><div class='alert alert-success' > Kitchen ambient light has been turned off. </div></div>";
+        return "<div id='Kitchen_Ambient_Light2_OFF_Alert'><div class='alert alert-danger' > Kitchen ambient light has been turned off. </div></div>";
     });
     setTimeout(function(){
         $("#Kitchen_Ambient_Light2_OFF_Alert").remove();
@@ -261,7 +261,7 @@ $("#BathroomLight_ON ,#BathroomLight2_ON ").click(function(){
 })
 $("#BathroomLight_OFF ,#BathroomLight2_OFF ").click(function(){
     $("#alert").append(function(){
-        return "<div id='BathroomLight_OFF_Alert'><div class='alert alert-success' > Bathroom light has been turned off. </div></div>";
+        return "<div id='BathroomLight_OFF_Alert'><div class='alert alert-danger' > Bathroom light has been turned off. </div></div>";
     });
     setTimeout(function(){
         $("#BathroomLight_OFF_Alert").remove();
@@ -279,7 +279,7 @@ $("#Corridor_light_main2_on ,#Corridor_light_main_on ").click(function(){
 })
 $("#Corridor_light_ambient_off ,#Corridor_light_ambient2_off ").click(function(){
     $("#alert").append(function(){
-        return "<div id='Corridor_light_main2_off_Alert'><div class='alert alert-success' > Corridor main light has been turned off. </div></div>";
+        return "<div id='Corridor_light_main2_off_Alert'><div class='alert alert-danger' > Corridor main light has been turned off. </div></div>";
     });
     setTimeout(function(){
         $("#Corridor_light_main2_off_Alert").remove();
@@ -297,7 +297,7 @@ $("#Corridor_light_Ambient2_on,#Corridor_light_Ambient_on ").click(function(){
 })
 $("#Corridor_light_Ambient2_off ,#Corridor_light_Ambient_off ").click(function(){
     $("#alert").append(function(){
-        return "<div id='Corridor_light_Ambient2_off_Alert'><div class='alert alert-success' > Corridor ambient light has been turned off. </div></div>";
+        return "<div id='Corridor_light_Ambient2_off_Alert'><div class='alert alert-danger' > Corridor ambient light has been turned off. </div></div>";
     });
     setTimeout(function(){
         $("#Corridor_light_Ambient2_off_Alert").remove();
