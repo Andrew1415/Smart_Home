@@ -1,4 +1,4 @@
-$("#front_lock , #Front_door_lock").click(function(){
+$("#front_lock_placeholder_positive, #front_lock_2_positive").click(function(){
     $("#alert").append(function(){
         return " <div id='front_lock_alert'><div class='alert alert-success' >The door has been locked</div></div>";
     });
@@ -7,7 +7,7 @@ $("#front_lock , #Front_door_lock").click(function(){
     }, 2000);
 
 })
-$("#front_unlock , #Front_door_unLock").click(function(){
+$("#front_lock_placeholder_unlock, #front_lock_2_unlock").click(function(){
     $("#alert").append(function(){
         return "<div id='front_unlock_alert'><div class='alert alert-danger' >The door has been unlocked</div></div>";
     });
@@ -16,7 +16,7 @@ $("#front_unlock , #Front_door_unLock").click(function(){
     }, 2000);
 
 })
-$("#M_Bedroom_Lock, #M_Bedroom_Lock2").click(function(){
+$("#bedroom_lock_placeholder_positive, #bedroom_lock_2_positive").click(function(){
     $("#alert").append(function(){
         return "<div id='M_Bedroom_Lock_alert'><div class='alert alert-success' > Bedroom door has been locked successfully </div></div>";
     });
@@ -25,7 +25,7 @@ $("#M_Bedroom_Lock, #M_Bedroom_Lock2").click(function(){
     }, 2000);
 
 })
-$("#M_Bedroom_unLock, #M_Bedroom_unLock2").click(function(){
+$("#bedroom_lock_placeholder_unlock, #bedroom_lock_2_unlock").click(function(){
     $("#alert").append(function(){
         return "<div id='M_Bedroom_unLock_alert'><div class='alert alert-danger' > Bedroom door has been unlocked! </div></div>";
     });
@@ -34,7 +34,7 @@ $("#M_Bedroom_unLock, #M_Bedroom_unLock2").click(function(){
     }, 2000);
 
 })
-$("#Master_blinds_Open, #Master_blinds2_Open").click(function(){
+$("#bedroom_blinds_positive, #bedroom_blinds_2_positive").click(function(){
     $("#alert").append(function(){
         return "<div id='Master_blinds_Open_Alert'><div class='alert alert-success' > Bedroom blinds are being opened. </div></div>";
     });
@@ -43,7 +43,7 @@ $("#Master_blinds_Open, #Master_blinds2_Open").click(function(){
     }, 2000);
 
 })
-$("#Master_blinds_Closed, #Master_blinds2_Closed").click(function(){
+$("#bedroom_blinds_close, #bedroom_blinds_2_close").click(function(){
     $("#alert").append(function(){
         return "<div id='Master_blinds_Closed_Alert'><div class='alert alert-danger' > Bedroom blinds are being closed. </div></div>";
     });
@@ -52,7 +52,7 @@ $("#Master_blinds_Closed, #Master_blinds2_Closed").click(function(){
     }, 2000);
 
 })
-$("#Office_blinds_Open, #Office_blinds2_Open").click(function(){
+$("#office_blinds_positive, #office_blinds_2_positive").click(function(){
     $("#alert").append(function(){
         return "<div id='Office_blinds_Open_Alert'><div class='alert alert-success' > Office blinds are being opened. </div></div>";
     });
@@ -61,7 +61,7 @@ $("#Office_blinds_Open, #Office_blinds2_Open").click(function(){
     }, 2000);
 
 })
-$("#Office_blinds_Closed, #Office_blinds2_Closed").click(function(){
+$("#office_blinds_close, #office_blinds_2_close").click(function(){
     $("#alert").append(function(){
         return "<div id='Office_blinds_Closed_Alerts'><div class='alert alert-danger' > Office blinds are being closed. </div></div>";
     });
@@ -70,7 +70,7 @@ $("#Office_blinds_Closed, #Office_blinds2_Closed").click(function(){
     }, 2000);
 
 })
-$("#Kitchen_blinds_Open, #Kitchen_blinds2_Open").click(function(){
+$("#kitchen_blinds_positive, #kitchen_blinds_2_positive").click(function(){
     $("#alert").append(function(){
         return "<div id='Kitchen_blinds_Open_Alerts'><div class='alert alert-success' > Kitchen blinds are being opened. </div></div>";
     });
@@ -79,7 +79,7 @@ $("#Kitchen_blinds_Open, #Kitchen_blinds2_Open").click(function(){
     }, 2000);
 
 })
-$("#Kitchen_blinds_Closed, #Kitchen_blinds2_Closed").click(function(){
+$("#kitchen_blinds_close, #kitchen_blinds_2_close").click(function(){
     $("#alert").append(function(){
         return "<div id='Kitchen_blinds_Closed_Alerts'><div class='alert alert-danger' > Kitchen blinds are being closed. </div></div>";
     });
@@ -88,7 +88,7 @@ $("#Kitchen_blinds_Closed, #Kitchen_blinds2_Closed").click(function(){
     }, 2000);
 
 })
-$("#Shower_on, #Shower2_on").click(function(){
+$("#bathroom_shower_on, #bathroom_shower_2_on").click(function(){
     $("#alert").append(function(){
         return "<div id='Shower_on_Alerts'><div class='alert alert-success' > The shower has been turned on. </div></div>";
     });
@@ -97,7 +97,7 @@ $("#Shower_on, #Shower2_on").click(function(){
     }, 2000);
 
 })
-$("#Shower_off, #Shower2_off ").click(function(){
+$("#bathroom_shower_off, #bathroom_shower_2_off").click(function(){
     $("#alert").append(function(){
         return "<div id='Shower_off_Alerts'><div class='alert alert-danger' > The shower has been turned off. </div></div>";
     });
@@ -106,7 +106,7 @@ $("#Shower_off, #Shower2_off ").click(function(){
     }, 2000);
 
 })
-$("#BathroomSink_OFF, #BathroomSink2_OFF").click(function(){
+$("#bathroom_sink_off, #bathroom_sink_2_off").click(function(){
     $("#alert").append(function(){
         return "<div id='BathroomSink_OFF_Alerts'><div class='alert alert-danger' > Bathroom sink tap has been turned off. </div></div>";
     });
@@ -115,7 +115,7 @@ $("#BathroomSink_OFF, #BathroomSink2_OFF").click(function(){
     }, 2000);
 
 })
-$("#BathroomSink_ON, #BathroomSink2_ON").click(function(){
+$("#bathroom_sink_on, #bathroom_sink_2_on").click(function(){
     $("#alert").append(function(){
         return "<div id='BathroomSink_ON_Alerts'><div class='alert alert-success' > Bathroom sink tap has been turned on. </div></div>";
     });
@@ -124,7 +124,7 @@ $("#BathroomSink_ON, #BathroomSink2_ON").click(function(){
     }, 2000);
 
 })
-$("#KitchenSink_ON, #KitchenSink2_ON").click(function(){
+$("#kitchen_sink_on, #kitchen_sink_2_on").click(function(){
     $("#alert").append(function(){
         return "<div id='KitchenSink_ON_Alerts'><div class='alert alert-success' > Kitchen sink tap has been turned on. </div></div>";
     });
@@ -133,7 +133,7 @@ $("#KitchenSink_ON, #KitchenSink2_ON").click(function(){
     }, 2000);
 
 })
-$("#KitchenSink_OFF, #KitchenSink2_OFF").click(function(){
+$("#kitchen_sink_off, #kitchen_sink_2_off").click(function(){
     $("#alert").append(function(){
         return "<div id='KitchenSink_OFF_Alerts'><div class='alert alert-danger' > Kitchen sink tap has been turned off. </div></div>";
     });
@@ -142,7 +142,7 @@ $("#KitchenSink_OFF, #KitchenSink2_OFF").click(function(){
     }, 2000);
 
 })
-$("#Master_Bedroom_Main_Light_ON, #Master_Bedroom_Main_Light2_ON").click(function(){
+$("#bedroom_light_1_positive, #bedroom_light_11_positive").click(function(){
     $("#alert").append(function(){
         return "<div id='Master_Bedroom_Main_Light_ON_Alert'><div class='alert alert-success' > Bedroom main light has been turned on. </div></div>";
     });
@@ -151,7 +151,7 @@ $("#Master_Bedroom_Main_Light_ON, #Master_Bedroom_Main_Light2_ON").click(functio
     }, 2000);
 
 })
-$("#Master_Bedroom_Main_Light_OFF, #Master_Bedroom_Main_Light2_OFF ").click(function(){
+$("#bedroom_light_11_off, #bedroom_light_1_off").click(function(){
     $("#alert").append(function(){
         return "<div id='Master_Bedroom_Main_Light_OFF_Alert'><div class='alert alert-danger' > Bedroom main light has been turned off. </div></div>";
     });
@@ -160,7 +160,7 @@ $("#Master_Bedroom_Main_Light_OFF, #Master_Bedroom_Main_Light2_OFF ").click(func
     }, 2000);
 
 })
-$("#Master_Bedroom_Ambient_Light_ON, #Master_Bedroom_Ambient_Light2_ON").click(function(){
+$("#bedroom_light_2_positive, #bedroom_light_22_positive").click(function(){
     $("#alert").append(function(){
         return "<div id='Master_Bedroom_Ambient_Light_ON_Alert'><div class='alert alert-success' > Bedroom ambient light has been turned on. </div></div>";
     });
@@ -169,7 +169,7 @@ $("#Master_Bedroom_Ambient_Light_ON, #Master_Bedroom_Ambient_Light2_ON").click(f
     }, 2000);
 
 })
-$("#Master_Bedroom_Ambient_Light_OFF ,#Master_Bedroom_Ambient_Light2_OFF ").click(function(){
+$("#bedroom_light_2_off, #bedroom_light_22_off").click(function(){
     $("#alert").append(function(){
         return "<div id='Master_Bedroom_Ambient_Light_OFF_Alert'><div class='alert alert-danger' > Bedroom ambient light has been turned off. </div></div>";
     });
@@ -178,7 +178,7 @@ $("#Master_Bedroom_Ambient_Light_OFF ,#Master_Bedroom_Ambient_Light2_OFF ").clic
     }, 2000);
 
 })
-$("#office_Main_Light_System_on ,#office_Main_Light_on ").click(function(){
+$("#office_light_1_positive,#office_light_11_positive").click(function(){
     $("#alert").append(function(){
         return "<div id='office_Main_Light_System_on_Alert'><div class='alert alert-success' > Office main light has been turned on. </div></div>";
     });
@@ -187,7 +187,7 @@ $("#office_Main_Light_System_on ,#office_Main_Light_on ").click(function(){
     }, 2000);
 
 })
-$("#office_Main_Light_System_off ,#office_Main_Light_off ").click(function(){
+$("#office_light_1_off ,#office_light_11_off").click(function(){
     $("#alert").append(function(){
         return "<div id='office_Main_Light_System_off_Alert'><div class='alert alert-danger' > Office main light has been turned off. </div></div>";
     });
@@ -196,7 +196,7 @@ $("#office_Main_Light_System_off ,#office_Main_Light_off ").click(function(){
     }, 2000);
 
 })
-$("#office_Ambient_Light_System_on ,#office_Ambient_Light_on ").click(function(){
+$("#office_light_2_positive,#office_light_22_positive").click(function(){
     $("#alert").append(function(){
         return "<div id='office_Ambient_Light_System_on_Alert'><div class='alert alert-success' > Office ambient light has been turned on. </div></div>";
     });
@@ -205,7 +205,7 @@ $("#office_Ambient_Light_System_on ,#office_Ambient_Light_on ").click(function()
     }, 2000);
 
 })
-$("#office_Ambient_Light_System_off,#office_Ambient_Light_off").click(function(){
+$("#office_light_2_off,#office_light_22_off").click(function(){
     $("#alert").append(function(){
         return "<div id='office_Ambient_Light_System_off_Alert'><div class='alert alert-danger' > Office ambient light has been turned off. </div></div>";
     });
@@ -214,7 +214,7 @@ $("#office_Ambient_Light_System_off,#office_Ambient_Light_off").click(function()
     }, 2000);
 
 })
-$("#Kitchen_Main_Light2_ON,#Kitchen_Main_Light_ON ").click(function(){
+$("#kitchen_light_1_positive, #kitchen_light_11_positive").click(function(){
     $("#alert").append(function(){
         return "<div id='Kitchen_Main_Light2_ON_Alert'><div class='alert alert-success' > Kitchen main light has been turned on. </div></div>";
     });
@@ -223,7 +223,7 @@ $("#Kitchen_Main_Light2_ON,#Kitchen_Main_Light_ON ").click(function(){
     }, 2000);
 
 })
-$("#Kitchen_Main_Light2_OFF ,#Kitchen_Main_Light_OFF ").click(function(){
+$("#kitchen_light_1_off, #kitchen_light_11_off").click(function(){
     $("#alert").append(function(){
         return "<div id='Kitchen_Main_Light2_OFF_Alert'><div class='alert alert-danger' > Kitchen main light has been turned off. </div></div>";
     });
@@ -232,7 +232,7 @@ $("#Kitchen_Main_Light2_OFF ,#Kitchen_Main_Light_OFF ").click(function(){
     }, 2000);
 
 })
-$("#Kitchen_Ambient_Light2_ON ,#Kitchen_Ambient_Light_ON").click(function(){
+$("#kitchen_light_2_positive, #kitchen_light_22_positive").click(function(){
     $("#alert").append(function(){
         return "<div id='Kitchen_Ambient_Light2_ON_Alert'><div class='alert alert-success' > Kitchen ambient light has been turned on. </div></div>";
     });
@@ -241,7 +241,7 @@ $("#Kitchen_Ambient_Light2_ON ,#Kitchen_Ambient_Light_ON").click(function(){
     }, 2000);
 
 })
-$("#Kitchen_Ambient_Light2_OFF ,#Kitchen_Ambient_Light_OFF ").click(function(){
+$("#kitchen_light_2_off, #kitchen_light_22_off").click(function(){
     $("#alert").append(function(){
         return "<div id='Kitchen_Ambient_Light2_OFF_Alert'><div class='alert alert-danger' > Kitchen ambient light has been turned off. </div></div>";
     });
@@ -250,7 +250,7 @@ $("#Kitchen_Ambient_Light2_OFF ,#Kitchen_Ambient_Light_OFF ").click(function(){
     }, 2000);
 
 })
-$("#BathroomLight_ON ,#BathroomLight2_ON ").click(function(){
+$("#bathroom_light_positive, #bathroom_light_2_positive").click(function(){
     $("#alert").append(function(){
         return "<div id='BathroomLight_ON_Alert'><div class='alert alert-success' > Bathroom light has been turned on. </div></div>";
     });
@@ -259,7 +259,7 @@ $("#BathroomLight_ON ,#BathroomLight2_ON ").click(function(){
     }, 2000);
 
 })
-$("#BathroomLight_OFF ,#BathroomLight2_OFF ").click(function(){
+$("#bathroom_light_off, #bathroom_light_2_off").click(function(){
     $("#alert").append(function(){
         return "<div id='BathroomLight_OFF_Alert'><div class='alert alert-danger' > Bathroom light has been turned off. </div></div>";
     });
@@ -268,7 +268,7 @@ $("#BathroomLight_OFF ,#BathroomLight2_OFF ").click(function(){
     }, 2000);
 
 })
-$("#Corridor_light_main2_on ,#Corridor_light_main_on ").click(function(){
+$("#corridor_light_1_positive, #corridor_light_11_positive").click(function(){
     $("#alert").append(function(){
         return "<div id='Corridor_light_main2_on_Alert'><div class='alert alert-success' > Corridor main light has been turned on. </div></div>";
     });
@@ -277,7 +277,7 @@ $("#Corridor_light_main2_on ,#Corridor_light_main_on ").click(function(){
     }, 2000);
 
 })
-$("#Corridor_light_ambient_off ,#Corridor_light_ambient2_off ").click(function(){
+$("#corridor_light_1_off, #corridor_light_11_off").click(function(){
     $("#alert").append(function(){
         return "<div id='Corridor_light_main2_off_Alert'><div class='alert alert-danger' > Corridor main light has been turned off. </div></div>";
     });
@@ -286,7 +286,7 @@ $("#Corridor_light_ambient_off ,#Corridor_light_ambient2_off ").click(function()
     }, 2000);
 
 })
-$("#Corridor_light_Ambient2_on,#Corridor_light_Ambient_on ").click(function(){
+$("#corridor_light_2_positive, #corridor_light_22_positive").click(function(){
     $("#alert").append(function(){
         return "<div id='Corridor_light_Ambient2_on_Alert'><div class='alert alert-success' > Corridor ambient light has been turned on. </div></div>";
     });
@@ -295,7 +295,7 @@ $("#Corridor_light_Ambient2_on,#Corridor_light_Ambient_on ").click(function(){
     }, 2000);
 
 })
-$("#Corridor_light_Ambient2_off ,#Corridor_light_Ambient_off ").click(function(){
+$("#corridor_light_2_off, #corridor_light_22_off").click(function(){
     $("#alert").append(function(){
         return "<div id='Corridor_light_Ambient2_off_Alert'><div class='alert alert-danger' > Corridor ambient light has been turned off. </div></div>";
     });

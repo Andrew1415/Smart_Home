@@ -86,12 +86,16 @@ a {
 #content {
   position: relative;
 }
-.container-fluid{
-  position: absolute;
- top: 50%;
-  transform: translate(0, -50%);
-  //padding: 10px; 
-background-color: none;
+#center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+//   position: absolute;
+//  top: 50%;
+//   transform: translate(0, -50%);
+//   //padding: 10px; 
+// background-color: none;
 }
 #menu10 {
   display: none;
@@ -109,7 +113,6 @@ background-color: none;
   width: 100%;
   border-style: double;
   border-width: 10px;
-
 }
 .info, .info .card-header, .info .card-body
 {
