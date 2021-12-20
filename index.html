@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="stiliai.css">
+    <link rel="shortcut icon" href="Logo.svg">
+    <title>Smart environment control system</title>
+</head>
+
+<body>
+    <main>
+
+        <div class="container-fluid" id="center">
+            <div class="col-12 col-xl-10 ">
+                <div class="row">
+                    <!-- Main menu -->
+                    <div class="card" id="intro">
+                        <img src="Logo.svg" style="height: 500px;">
+                        <h1 class="text-center">Smart environment control system. </h1>
+                        <h6 class="text-center">Created by Andrius Stulgys.</h6>
+                        <h6 class="text-center">Klaipeda University</h6>
+                        <h6 class="text-center">2021</h6>
+                    </div>
+                    <div class="card" id="menu10">
+                        <div class="row">
+                            <div class="col-6 col-xl-4">
+                                <p><img src="icons/lock.png" class="icons" alt="Lock's" role="button" id="menu1button">
+                                </p>
+                                <p><img src="icons/windows.png" class="icons" alt="Windows/Blinds" role="button"
+                                        id="menu6button"></p>
+                                <p><img src="icons/light_bulb.png" alt="Lighting system" class="icons" role="button"
+                                        id="menu8button"></p>
+                            </div>
+                            <div class="col-6 col-xl-4">
+                                <p><img src="icons/cctv.png" alt="cctv" class="icons" role="button" id="menu2button">
+                                </p>
+                                <p><img src="icons/house.png" class="icons menu5button" alt="Home" role="button"></p>
+                                <p><img src="icons/electric-appliance.png" class="icons" alt="Tv's" role="button"
+                                        id="menu9button"></p>
+                            </div>
+                            <div class="col-12 col-xl-4">
+                                <p><img src="icons/air-conditioner.png" class="icons" alt="Climate controls"
+                                        role="button" id="menu4button"></p>
+                                <p><img src="icons/tap.png" class="icons" alt="Water systems" role="button"
+                                        id="menu7button" </p>
+                                <p><img src="icons/support.png" class="icons" alt="" role="button" id="menu3button"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menues  -->
+                    <!-- Menu  1 -->
+                    <div class="card" id="menu1">
+                        <h1>
+                            <div class="btn btn-danger button_back menu10button" role="button">&#129044;</div>Locks
+                        </h1>
+                        <div id="front_lock_placeholder"></div>
+                        <div id="bedroom_lock_placeholder"></div>
+                    </div>
+                    <!-- Menu  2 -->
+                    <div class="card" id="menu2">
+                        <h1>
+                            <div class="btn btn-danger button_back menu10button"" role=" button">&#129044;</div>CCTV
+                        </h1>
+                        <div id="kitchen_camera"></div>
+                        <div id="bedroom_camera"></div>
+                        <div id="office_camera"></div>
+                        <div id="corridor_camera"></div>
+                    </div>
+                    <!-- Menu  3 -->
+                    <div class="card" id="menu3">
+                        <H1>
+                            <div class="btn btn-danger button_back menu10button" role="button">&#129044;</div>
+                            Information
+                        </H1>
+                        <div class="card info col-5 col-lg-3">
+                            <div class="card-header">
+                                <p>Page made by: <a href="https://www.linkedin.com/in/andrius-stulgys-95a943212/"
+                                        target=”_blank” class="link_none">Andrius Stulgys <img src="Logo.svg"
+                                            id="Logo_main"></a></p>
+                            </div>
+                            <div class="card-body">
+                                <p>If there is a problem pleas contact out support team via email: <a
+                                        href="mailto: andrius.stulgys@ku.lt" class="link_none">andrius.stulgys@ku.lt</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menu  4 -->
+                    <div class="card" id="menu4">
+                        <h1>
+                            <div class="btn btn-danger button_back menu10button" role="button">&#129044;</div>Climate
+                            cotrol
+                        </h1>
+                        <div id="bedroom_ac"></div>
+                        <div id="office_ac"></div>
+                        <div id="kitchen_ac"></div>
+                        <div id="bathroom_ac"></div>
+                    </div>
+                    <!-- Menu  5 -->
+                    <div class="card" id="menu5">
+                        <h1>
+                            <div class="btn btn-danger button_back menu10button" role="button">&#129044;</div>Floor plan
+                        </h1>
+                        <div class="row">
+                            <p><img src="Drawing1.png" usemap="#workmap" id="map"></p>
+                            <map name="workmap">
+                                <area shape="rect" coords="411,273,863,498" alt="Master Bedroom" id="menu11button"
+                                    role="button">
+                                <area shape="rect" coords="33,273,409,498" alt="Home office" id="menu12button"
+                                    role="button">
+                                <area shape="rect" coords="33,46,258,271" alt="Kitchen" id="menu13button" role="button">
+                                <area shape="rect" coords="260,46,409,195" alt="Bathroom & toilet" id="menu14button"
+                                    role="button">
+                                <area shape="poly" coords="411,46,485,49,485,274,259,274,259,200,411,200" alt="Corridor"
+                                    id="menu15button" role="button">
+                            </map>
+                        </div>
+
+                    </div>
+                    <!-- Menu  6 -->
+                    <div class="card" id="menu6">
+                        <h1>
+                            <div class="btn btn-danger button_back menu10button" role="button">&#129044;</div>Windows &
+                            Blinds
+                        </h1>
+                        <div id="bedroom_blinds"></div>
+                        <div id="office_blinds"></div>
+                        <div id="kitchen_blinds"></div>
+                    </div>
+                    <!-- Menu  7 -->
+                    <div class="card" id="menu7">
+                        <h1>
+                            <div class="btn btn-danger button_back menu10button" role="button">&#129044;</div>Showers /
+                            sinks / taps
+                        </h1>
+                        <div id="bathroom_shower"></div>
+                        <div id="bathroom_sink"></div>
+                        <div id="kitchen_sink"></div>
+                    </div>
+                    <!-- Menu  8 -->
+                    <div class="card" id="menu8">
+                        <h1>
+                            <div class="btn btn-danger button_back menu10button" role="button">&#129044;</div>Lighting
+                            system
+                        </h1>
+                        <div id="bedroom_light_1"></div>
+                        <div id="bedroom_light_2"></div>
+                        <div id="office_light_1"></div>
+                        <div id="office_light_2"></div>
+                        <div id="kitchen_light_1"></div>
+                        <div id="kitchen_light_2"></div>
+                        <div id="bathroom_light"></div>
+                        <div id="corridor_light_1"></div>
+                        <div id="corridor_light_2"></div>
+                    </div>
+                    <!-- Menu  9 -->
+                    <div class="card" id="menu9">
+                        <h1>
+                            <div class="btn btn-danger button_back menu10button" role="button">&#129044;</div> Home
+                            appliances
+                        </h1>
+                    </div>
+                    <!-- Menu  11 -->
+                    <div class="card" id="menu11">
+                        <h1>
+                            <div class="btn btn-danger button_back menu5button" role="button">&#129044;</div> Master
+                            Bedroom
+                        </h1>
+                        <div id="bedroom_lock_2"></div>
+                        <div id="bedroom_camera_2"></div>
+                        <div id="bedroom_ac_2"></div>
+                        <div id="bedroom_blinds_2"></div>
+                        <div id="bedroom_light_11"></div>
+                        <div id="bedroom_light_22"></div>
+                    </div>
+                    <!-- Menu  12 -->
+                    <div class="card" id="menu12">
+                        <h1>
+                            <div class="btn btn-danger button_back menu5button" role="button">&#129044;</div> Home
+                            Office
+                        </h1>
+                        <div id="office_camera_2"></div>
+                        <div id="office_ac_2"></div>
+                        <div id="office_blinds_2"></div>
+                        <div id="office_light_11"></div>
+                        <div id="office_light_22"></div>
+                    </div>
+                    <!-- Menu  13 -->
+                    <div class="card" id="menu13">
+                        <h1>
+                            <div class="btn btn-danger button_back menu5button" role="button">&#129044;</div> Kitchen
+                        </h1>
+                        <div id="kitchen_camera_2"></div>
+                        <div id="kitchen_ac_2"></div>
+                        <div id="kitchen_blinds_2"></div>
+                        <div id="kitchen_sink_2"></div>
+                        <div id="kitchen_light_11"></div>
+                        <div id="kitchen_light_22"></div>
+                    </div>
+                    <!-- Menu  14 -->
+                    <div class="card" id="menu14">
+                        <h1>
+                            <div class="btn btn-danger button_back menu5button" role="button">&#129044;</div> Bathroom
+                            and WC
+                        </h1>
+                        <div id="bathroom_ac_2"></div>
+                        <div id="bathroom_shower_2"></div>
+                        <div id="bathroom_sink_2"></div>
+                        <div id="bathroom_light_2"></div>
+                    </div>
+                    <!-- Menu  15 -->
+                    <div class="card" id="menu15">
+                        <h1>
+                            <div class="btn btn-danger button_back menu5button" role="button">&#129044;</div> Corridor
+                        </h1>
+                        <div id="front_lock_2"></div>
+                        <div id="corridor_light_11"></div>
+                        <div id="corridor_light_22"></div>
+                        <div id="corridor_camera_2"></div>
+                    </div>
+                    <!-- End of menus -->
+                </div>
+            </div>
+        </div>
+        <div id="alert" style="position: absolute; top: 8px; left: 8px;"></div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/menus.js"></script>
+    <script src="js/heating.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="js/cameras.js"></script>
+    <script src="js/alerts.js"></script>
+</body>
+
+</html>
